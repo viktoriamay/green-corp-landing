@@ -26,6 +26,10 @@ button {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+    position: sticky;
+    background-color: #fff;
+    top: 0;
+    z-index: 1;
 }
 
 .header__logo {
@@ -73,8 +77,22 @@ button {
 .about__image {
     width: 500px;
 }
+
+@keyframes rotation {
+    from {
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
    
 .about__sun-image {
+    position: absolute;
+    animation-name: rotation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
     width: 100px;
     height: 100px;
 }
@@ -188,3 +206,4 @@ footer {
 .footer__links a {
     margin-bottom: 15px;
 }
+
