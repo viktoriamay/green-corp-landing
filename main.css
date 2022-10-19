@@ -96,6 +96,108 @@ button {
     width: 100px;
 }
 
+.features {
+    background: #ffffff;
+    padding: 115px 60px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.card {
+    padding: 35px 40px 25px 40px;
+    border: 1px solid #d9e4e6;
+    border-radius: 5px;
+}
+
+.card__logo {
+    width: 100px;
+    height: 100px;
+    font-size: 32px;
+    font-weight: 700;
+    background: #eaeff9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__logo--1 {
+    color: #ffb406;
+}
+
+.card__logo--2 {
+    color: #ad1714;
+}
+
+.card__logo--3 {
+    color: #22a030;
+}
+
+.card__paragraph {
+    font-size: 16px;
+    line-height: 22px;
+    opacity: 0.8;
+}
+
+.features__border {
+    margin: 50px 0;
+    border: 1px solid #e6eaf4;
+}
+
+.features__feedback {
+    display: flex;
+    align-items: center;
+}
+
+.features__box {
+    padding: 30px 40px 25px 40px;
+    color: #ffffff;
+    border-radius: 25px;
+}
+
+.features__box h3 {
+    margin: 0 0 20px 0;
+    font-size: 48px;
+}
+
+.features__savings-box {
+    background: #dc5e26;
+    box-shadow: 0 6px 0 rgb(221 95 38 / 20%);
+    margin: 0 30px 0 0;
+}
+
+.features__rate-box {
+    background: #1d263a;
+    box-shadow: 0 6px 0 rgb(29 38 58 / 20%);
+}
+
+.stars {
+    color: #ff7039;
+}
+
+.features__feedback-left {
+    margin: 0 10px 0 0;
+}
+
+.features__heading {
+    font-size: 48px;
+}
+
+.features__paragraph {
+    font-size: 18px;
+    line-height: 26px;
+    opacity: 0.7;
+}
+
+.features__feedback-right {
+    display: flex;
+    
+}
+
 .form {
     background-color: #1D263A;
     color: #fff;
@@ -229,6 +331,17 @@ footer {
     }
 }
 
+@media (max-width: 960px) {
+    .features__feedback {
+        flex-direction: column;
+    }
+
+    .cards {
+        grid-template-columns: auto;
+    }
+
+}
+
 @media (max-width: 720px) {
     .header {
         padding: 10px;
@@ -240,6 +353,26 @@ footer {
 
     .about {
         padding: 50px 10px;
+    }
+
+    .features {
+        padding: 50px 10px;
+    }
+
+    .features__feedback-left {
+        margin: 0;
+    }
+
+    .features__box h3 {
+        font-size: 36px;
+    }
+
+    .features__feedback-right {
+        flex-direction: column;
+    }
+
+    .features__savings-box {
+        margin: 0 0 30px 0;
     }
 
     .form {
