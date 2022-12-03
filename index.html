@@ -14,7 +14,7 @@
     <header class="header">
         <img class="header__logo" src="img/logo.svg" alt="logo">
         <div class="header__controls">
-            <a href="#contacts">Контакты</a>
+            <a href="#form">Контакты</a>
             <button type="button">Заказать</button>
         </div>
     </header>
@@ -23,7 +23,7 @@
         <div class="about__info animate__animated animate__fadeInLeft">
             <h1>Солнечные панели GreenRobotic</h1>
             <p>Производите дешёвую экологически чистую электроэнергию из солнечного света</p>
-            <button type="button">Узнать подробнее <i class="fa-solid fa-chevron-right"></i></button>
+            <button class="more-button" href="#features" type="button">Узнать подробнее <i class="fa-solid fa-chevron-right"></i></button>
         </div>
         <div class="about__images animate__animated animate__fadeInRight">
             <img class="about__sun-image" src="img/sun.png">
@@ -133,11 +133,11 @@
             </div>
         </div>
     </section>
-    <section class="form">
+    <section class="form" id="form">
         <div class="form__container">
             <h1>Оставьте свои контакты</h1>
             <p>Поможем подобрать модель. <br> Выбрать удобный вариант доставки и установки. <br> Гарантия возврата денег.</p>
-            <form action="">
+            <form action="" class="form_form">
                 <div class="form__group">
                     <label for="name">Ваше имя</label>
                     <input type="text" placeholder="Введите имя" id="name">
@@ -156,10 +156,12 @@
                         <option value="10-30">10 000₽ – 30 000₽</option>
                         <option value="30-60">30 000₽ – 60 000₽</option>
                         <option value="60-100">60 000₽ – 100 000₽</option>
-                        <option value="100+">100 000₽</option>
+                        <option value="other">
+                            Другое
+                        </option>
                     </select>
                 </div>
-                <div class="form__group">
+                <div class="form__group form__other_button">
                     <button type="submit" class="form__submit">Отправить заявку</button>
                 </div>
             </form>
